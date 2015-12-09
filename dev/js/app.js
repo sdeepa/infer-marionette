@@ -7,7 +7,7 @@ require([], function(){
   });
 
   // Initialize your Application
-  var App = new Application({age: 35});
+  var App = new Application({age: 3});
 
   // Declare our options
   App.options = {
