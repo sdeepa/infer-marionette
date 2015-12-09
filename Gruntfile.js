@@ -39,6 +39,8 @@ module.exports = function(grunt) {
           {expand: true, flatten: true, src: ['bower_components/underscore/underscore-min.js'], dest: 'dist/js', filter: 'isFile'},
           // Backbone
           {expand: true, flatten: true, src: ['bower_components/backbone/backbone-min.js'], dest: 'dist/js', filter: 'isFile'},
+          // Marionette
+          {expand: true, flatten: true, src: ['bower_components/backbone.marionette/lib/backbone.marionette.min.js'], dest: 'dist/js', filter: 'isFile'},
           // Bootstrap JS
           {expand: true, flatten: true, src: ['bower_components/bootstrap/dist/js/bootstrap.min.js'], dest: 'dist/js', filter: 'isFile'},
           // Bootstrap CSS 

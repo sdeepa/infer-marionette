@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bengrunfeld/grunt_bower_app.git"
+    "url": "git+https://github.com/bengrunfeld/infer.git"
   },
   "author": "Ben",
   "license": "ISC",

@@ -1,8 +1,8 @@
 require([], function(){
   // Working with Application example
   var Application = Marionette.Application.extend({
-    initialize: function(args){
-      console.log('At Initializer. Options: ' + JSON.stringify(args));
+    initialize: function(attrs){
+      console.log('At Initializer. Options: ' + JSON.stringify(attrs));
     }
   });
 

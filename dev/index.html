@@ -43,10 +43,33 @@
             </div>
           </div>
           <section class="main-content-area">
+            <div class="trial-warning">
+            </div>
+
+            <div class="cta-boxes col-xs-12">
+              <div class="row cta-boxes-target">
+              </div>
+            </div>
           </section>
         </div>
       </div>
     </div>
+
+    <script id="trial-tpl" type="text/template">
+      <div class="trial-warning-container col-xs-10">
+        <h5><img src="img/<%= warning_img %>" alt="<%= img_alt %>"><span class="trial-txt">Your trial ends in <%= trial_days_left %> days!</span></h5>
+        <p>Feel free to keep testing Infer <a href="<%= subscribe_link %>">Subscibe Now</a></p>
+      </div>
+    </script>
+    
+    <script id="cta-box-tpl" type="text/template">      
+      <div class="cta-single-box col-xs-3">
+        <button class="remove">x</button>
+        <img class="cta-box-img" src="img/<%= img_src %>" alt="<%= img_alt %>">
+        <h5 class="cta-title"><%= cta_title %></h5>
+        <p class="cta-caption"><%= cta_caption %></p>
+      </div>
+    </script>
 
     <!-- build:js js/jquery.min.js -->
       <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -58,6 +81,10 @@
 
     <!-- build:js js/backbone-min.js -->
       <script src="../bower_components/backbone/backbone.js"></script>
+    <!-- /build -->
+
+    <!-- build:js js/backbone.marionette.min.js -->
+      <script src="../bower_components/backbone.marionette/lib/backbone.marionette.js"></script>
     <!-- /build -->
 
     <!-- build:js js/bootstrap.min.js -->
